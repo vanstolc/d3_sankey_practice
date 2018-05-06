@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <title>Estimated Treated Water Flow in Washington County</title>
-<svg width="800" height="300"></svg>
+<svg width="750" height="400"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://unpkg.com/d3-sankey@0.6"></script>
 <script>
@@ -39,11 +39,13 @@ var formatNumber = d3.format(",.0f"),
             "#84aec8",
             "#5581ba"]);
 
+// Sets width and padding of nodes
 var sankey = d3.sankey()
     .nodeWidth(15)
     .nodePadding(10)
     .extent([[1, 1], [width - 1, height - 6]]);
 
+// Sets color and opacity of links
 var link = svg.append("g")
     .attr("class", "links")
     .attr("fill", "none")
@@ -51,12 +53,14 @@ var link = svg.append("g")
     .attr("stroke-opacity", 1)
   .selectAll("path");
 
+// Sets attributes of the labels
 var node = svg.append("g")
     .attr("class", "nodes")
     .attr("font-family", "sans-serif")
     .attr("font-size", 10)
   .selectAll("g");
 
+//links the dataset and sets up error message
 d3.json("energy1.json", function(error, energy1) {
   if (error) throw error;
 
@@ -75,6 +79,7 @@ d3.json("energy1.json", function(error, energy1) {
     .data(energy1.nodes)
     .enter().append("g");
 
+  // adds the colored node boxes to the Sankey diagram, each size based on the link values
   node.append("rect")
       .attr("x", function(d) { return d.x0; })
       .attr("y", function(d) { return d.y0; })
@@ -83,6 +88,7 @@ d3.json("energy1.json", function(error, energy1) {
       .attr("fill", function(d) { return color(d.name.replace(/ .*/, "")); })
       .attr("stroke", "#000");
 
+  // Makes the names of each node show up on the Sankey diagram
   node.append("text")
       .attr("x", function(d) { return d.x0 - 6; })
       .attr("y", function(d) { return (d.y1 + d.y0) / 2; })
