@@ -232,7 +232,7 @@ Finally, we bring in the node information. The size of the node is determined by
 ## 4\. More examples of similar geovisualizations
 
 This is a simple example of a Sankey diagram, but others can be extremely complex! For example Mike Bostock visualizes projected energy data for the United Kingdom in 2050 is his Sankey example:
-![](/assets/original_bostock_sankey1.jpg)
+![](/assets/Original_bostock_sankey1.JPG)
 
 
 
