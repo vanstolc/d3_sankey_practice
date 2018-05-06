@@ -2,7 +2,7 @@
 
 **Sankey** | **May 1, 2018** | **Processes with Numerical Data** | **Contributors:** [Courtney van Stolk](https://github.com/vanstolc)
 
-![](C:\Users\Courtney\Documents\git\d3_sankey_practice\assets\sankey-capture.PNG)
+![](\assets\sankey-capture.PNG)
 
 This visualization creates a Sankey diagram, commonly used to show the magnitude of flows between parts of a unidirectional system. In this case I have used it to show the flow of water in Washington County, Oregon from water sources through the water distribution nodes, to the consumers, and then to wastewater treatment. 
 
@@ -231,7 +231,8 @@ Finally, we bring in the node information. The size of the node is determined by
 
 ## 4\. More examples of similar geovisualizations
 
-This is a simple example of a Sankey diagram, but others can be extremely complex!
+This is a simple example of a Sankey diagram, but others can be extremely complex! For example Mike Bostock visualizes projected energy data for the United Kingdom in 2050 is his Sankey example:
+![](assets\original_bostock_sankey1)
 
 
 
