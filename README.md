@@ -14,13 +14,16 @@ The flows depicted here are approximate. The actual flow pattern changes on a da
 
 ## 1\. Set up the workspace
 
-
+This visualization requires three files in your workspace:
+* your data, in .json format
+* the index.html file with your code
+* the javascript file with the Sankey code, which can also be grabbed from an online host
 
 ## 2\. Data Sources
 
-The Sankey HTML code is straightforward, but requires the data to be inputted in a specific syntax.
+The Sankey HTML code is straightforward but requires the data to be inputted in a specific syntax in order for it to interact nicely with the Sankey JavaScript code.
 
-I recommend first drawing out a sketch of the process and the flows which will make the following steps easier. Then, assign each step a number from 0 to one less than the total number of nodes.
+I recommend first drawing out a sketch of the process and the flows which will make the following steps easier. Assign each step a number from 0 to one less than the total number of nodes.
 
 First, you create an array named ```"nodes" ```which contains all of the steps in your process and assigns their names. Write these in the order you determined in the sketch.
 
@@ -64,7 +67,7 @@ Next, you create a second array called ```"links"```. This array calls in each o
 {"source":8,"target":9,"value":52.3},{"source":8,"target":10,"value":26},{"source":8,"target":11,"value":39}]}
 ```
 
-This .json file is then saved and referenced in the HTML file.
+This .json file is then saved and will be referenced in the HTML file.
 
 ## 3\. Tutorial
 
