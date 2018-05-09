@@ -2,7 +2,7 @@
 
 **Sankey** | **May 1, 2018** | **Processes with Numerical Data** | **Contributors:** [Courtney van Stolk](https://github.com/vanstolc)
 
-![](/assets/sankey-capture.PNG)
+![](/assets/mywatersankey.jpeg)
 
 This visualization creates a Sankey diagram, commonly used to show the magnitude of flows between parts of a unidirectional system. In this case I have used it to show the flow of water in Washington County, Oregon from water sources through the water distribution nodes, to the consumers, and then to wastewater treatment. 
 
